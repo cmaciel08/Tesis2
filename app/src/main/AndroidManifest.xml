@@ -19,6 +19,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".UniActivity" />
+        <activity android:name=".MuniActivity" />
+        <activity android:name=".PjudicialActivity"></activity>
     </application>
 
 </manifest>
