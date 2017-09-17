@@ -1,5 +1,6 @@
 package android.prueba.david.tesis;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -84,10 +85,19 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_uni) {
-            // Handle the camera action
+            // Ir al activity de la Uiversidad
+            Intent a = new Intent(this, UniActivity.class );
+            startActivity(a);
+
         } else if (id == R.id.nav_muni) {
+            // Ir al activity de la Municipalidad
+            Intent b = new Intent(this, MuniActivity.class);
+            startActivity(b);
 
         } else if (id == R.id.nav_pjudicial) {
+            // Ir al activity del Poder Judicial
+            Intent c = new Intent(this, PjudicialActivity.class);
+            startActivity(c);
 
         }  else if (id == R.id.nav_send) {
 
