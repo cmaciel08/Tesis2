@@ -4,15 +4,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_uni"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_uni"
             android:title="Universidad Nacional de Itapua" />
         <item
             android:id="@+id/nav_muni"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_municipalidad"
             android:title="Muninicipalidad de Encarnacion" />
         <item
             android:id="@+id/nav_pjudicial"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_judicial"
             android:title="Poder Judicial" />
 
     </group>
