@@ -1,8 +1,11 @@
 package android.prueba.david.tesis;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -11,14 +14,21 @@ import java.util.List;
 public class UniActivity extends AppCompatActivity {
 
     private ListView listView;
-
-
-
+    private ImageButton imgButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uni);
+
+        imgButton = (ImageButton) findViewById(R.id.imageButtonMaps);
+        imgButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                 Intent intent = new Intent(getApplication(), MapsUniActivity.class);
+                startActivity(intent);
+            }
+        });
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_logo);
@@ -49,5 +59,6 @@ public class UniActivity extends AppCompatActivity {
 
         // Enlasamos el adaptador con nuestro listView
         listView.setAdapter(adapter);
+
     }
 }
