@@ -11,6 +11,8 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.UiSettings;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -56,9 +58,14 @@ public class MapsUniActivity extends FragmentActivity implements OnMapReadyCallb
 
         mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
 
+        UiSettings uiSettings =mMap.getUiSettings();
+        uiSettings.setZoomControlsEnabled(true);
+
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng sydney = new LatLng(-27.306667, -55.887686);
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Univeridad Nacional de Itapua").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+        float zoomlevel = 16;
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, zoomlevel));
     }
 }
