@@ -10,4 +10,6 @@
     <string name="ver_tramite_a_seguir_para_el_pago">Ver tramite a seguir para el pago</string>
     <string name="button">Button</string>
     <string name="title_activity_maps_uni">Map</string>
+    <string name="bienvenidos_a">Bienvenidos a</string>
+    <string name="ver_menu">VER MENU</string>
 </resources>
