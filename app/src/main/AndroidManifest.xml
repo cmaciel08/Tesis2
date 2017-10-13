@@ -48,6 +48,9 @@
             android:name=".PjudicialActivity"
             android:parentActivityName=".MainActivity" />
 
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />

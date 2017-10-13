@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e0f7fa"
+    android:background="#0097a7"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="android.prueba.david.tesis.MainActivity"
     tools:showIn="@layout/app_bar_main"
@@ -12,96 +12,35 @@
     tools:layout_editor_absoluteX="0dp">
 
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="71dp"
-        android:layout_height="0dp"
-        app:srcCompat="@mipmap/ic_uni"
-        android:layout_marginStart="30dp"
-        tools:ignore="ContentDescription,VectorDrawableCompat"
-        android:contentDescription=""
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        android:layout_marginLeft="30dp" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="92dp"
-        android:layout_height="48dp"
-        app:srcCompat="@mipmap/ic_municipalidad"
-        android:layout_marginEnd="38dp"
-        tools:ignore="ContentDescription,VectorDrawableCompat"
-        android:contentDescription=""
-        app:layout_constraintRight_toLeftOf="@+id/imageView6"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginTop="39dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginRight="38dp" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="82dp"
-        android:layout_height="0dp"
-        app:srcCompat="@mipmap/ic_judicial"
-        android:layout_marginEnd="16dp"
-        android:contentDescription=""
-        tools:ignore="ContentDescription"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView5"
-        android:layout_marginRight="16dp" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="95dp"
-        android:layout_height="36dp"
-        android:text="@string/bienvenidos_a"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="199dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewBienvenido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ConsultasPY"
-        android:layout_marginStart="8dp"
-        tools:ignore="HardcodedText"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/textView4"
-        android:layout_marginLeft="8dp" />
-
-    <Button
-        android:id="@+id/acceder"
-        android:layout_width="159dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="67dp"
-        android:background="@color/colorPrimary"
-        android:drawableEnd="@drawable/ic_menu"
-        android:drawableRight="@drawable/ic_menu"
-        android:text="@string/ver_menu"
+        android:typeface="serif"
+        android:text="Bienvenido"
+        android:textSize="30sp"
         android:textColor="@color/colorIcons"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        android:layout_marginEnd="105dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="69dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="105dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_menu"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBienvenido"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
 
 </android.support.constraint.ConstraintLayout>

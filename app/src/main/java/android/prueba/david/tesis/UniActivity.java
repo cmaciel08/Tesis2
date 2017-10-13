@@ -1,6 +1,8 @@
 package android.prueba.david.tesis;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.SearchView;
@@ -11,20 +13,52 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.SimpleCursorAdapter;
+import android.widget.SimpleCursorTreeAdapter;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UniActivity extends AppCompatActivity {
 
-    private ListView listView;
+    //private ListView listView;
     private ImageButton imgButton;
-    private ArrayAdapter<String> adapter;
+    //private ArrayAdapter<String> adapter;
+    private DataBaseManager manager;
+    private Cursor cursor;
+    private ListView lista;
+    private SimpleCursorAdapter adapter;
+    //private TextView tv;
+    //private ImageButton bt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uni);
+
+        manager = new DataBaseManager(this);
+        lista = (ListView) findViewById(R.id.listViewUniversidad);
+       /* tv = (TextView) findViewById(R.id.editTextBuscarUNI);
+        bt = (ImageButton) findViewById(R.id.imageButtonBuscarUni);
+
+        bt.setOnClickListener(this);*/
+
+       /* manager.insertar("Matricula Ingenieria Comercial", "250000 ");
+        manager.insertar ("Matricula Contaduria Publica", "250000 ");*/
+        manager.insertar("Matricula Lic. Administracion", "250000 ");
+        //manager.eliminar("Matricula Lic. Administracion");
+
+
+        String [] from = new String[] {manager.CN_NAME,manager.CN_MONTO};
+        int [] to = new int[] {android.R.id.text1,android.R.id.text2};
+
+        //simple_list_item_2
+        cursor = manager.cargarCursorArancel();
+        adapter = new SimpleCursorAdapter (UniActivity.this,android.R.layout.simple_list_item_2, cursor, from,to,0);
+        lista.setAdapter(adapter);
+
+
 
         imgButton = (ImageButton) findViewById(R.id.imageButtonMaps);
         imgButton.setOnClickListener(new View.OnClickListener() {
@@ -35,10 +69,8 @@ public class UniActivity extends AppCompatActivity {
             }
         });
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_logo);
 
-        ListView lv = (ListView) findViewById(R.id.listViewCosto);
+       /* ListView lv = (ListView) findViewById(R.id.listViewCosto);
 
         //Datos a mostrar
         List<String> names = new ArrayList<String>();
@@ -59,13 +91,13 @@ public class UniActivity extends AppCompatActivity {
         names.add("Derecho de Ex. Ing. Comercial T.O. 35.000");
 
 
-        // Adaptador de la forma visul en que mostraremos nuestro datos
+        // Adaptador de la forma visual en que mostraremos nuestro datos
         adapter = new ArrayAdapter<>(
                 UniActivity.this,
                 android.R.layout.simple_list_item_1,
                 names);
         lv.setAdapter(adapter);
-        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
+        //ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);*/
 
         // Enlasamos el adaptador con nuestro listView
         //listView.setAdapter(adapter);
@@ -95,5 +127,17 @@ public class UniActivity extends AppCompatActivity {
 
        return super.onCreateOptionsMenu(menu);
    }
+
+  /*  @Override
+    public void onClick(View v) {
+        if (v.getId()== R.id.imageButtonBuscarUni) {
+
+            Cursor c =manager.buscarContacto(tv.getText().toString());
+            adapter.changeCursor(c);
+
+        }
+
+
+    }*/
 }
 
