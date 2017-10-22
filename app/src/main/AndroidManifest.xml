@@ -20,7 +20,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:label="ConsultasPy"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +30,7 @@
         </activity>
         <activity
             android:name=".UniActivity"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".Uni2Activity" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
@@ -50,7 +50,6 @@
 
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
@@ -68,7 +67,8 @@
 
         <activity
             android:name=".MapsUniActivity"
-            android:label="@string/title_activity_maps_uni"></activity>
+            android:label="@string/title_activity_maps_uni" />
+        <activity android:name=".Uni2Activity"></activity>
     </application>
 
 </manifest>

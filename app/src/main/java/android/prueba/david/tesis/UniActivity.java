@@ -37,6 +37,7 @@ public class UniActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uni);
 
+
         manager = new DataBaseManager(this);
         lista = (ListView) findViewById(R.id.listViewUniversidad);
        /* tv = (TextView) findViewById(R.id.editTextBuscarUNI);
@@ -44,9 +45,18 @@ public class UniActivity extends AppCompatActivity {
 
         bt.setOnClickListener(this);*/
 
-       /* manager.insertar("Matricula Ingenieria Comercial", "250000 ");
-        manager.insertar ("Matricula Contaduria Publica", "250000 ");*/
-        manager.insertar("Matricula Lic. Administracion", "250000 ");
+       //manager.insertar("Matricula Ingenieria Comercial", "250000 ");
+        //manager.insertar ("Matricula Contaduria Publica", "250000 ");
+        manager.insertar("Matricula Lic. Administracion", "250.000");
+        manager.insertar("Cuota Lic. Administracion", "60.000");
+        manager.insertar("Cuota Lic. Ingenieria COmercial", "60.000");
+        manager.insertar("Cuota Contaduria Publica", "60.000");
+        manager.insertar("Derecho Examen P. Oportunidad", "35.000");
+        manager.insertar("Derecho Examen S. Oportunidad", "40.000");
+        manager.insertar("Derecho Examen T. Oportunidad", "45.000");
+        manager.insertar("Derecho Examen S. Oportunidad", "40.000");
+        manager.insertar("Conval. por Materia p/ Univ. Privada", "100.000");
+        manager.insertar("Conval. por Materia p/ Univ. Publica", "50.000");
         //manager.eliminar("Matricula Lic. Administracion");
 
 
