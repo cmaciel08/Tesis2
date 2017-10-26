@@ -9,8 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 
 public class DbHelper extends SQLiteOpenHelper {
-    private static final String DB_NAME = "universidad.sqlite";
-    private static final int DB_SCHEME_VERSION = 1;
+    private static final String DB_NAME = "universidad_I.sqlite";
+    private static final int DB_SCHEME_VERSION = 3;
 
     public DbHelper(Context context) {
         super(context, DB_NAME, null, DB_SCHEME_VERSION);
@@ -19,7 +19,10 @@ public class DbHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
 
+        db.execSQL(DataBaseManagerDer.CREATE_TABLE);
         db.execSQL(DataBaseManager.CREATE_TABLE);
+        //db.execSQL("create table derecho(_id integer primary key autoincrement,arancel text,monto text)");
+
 
     }
 

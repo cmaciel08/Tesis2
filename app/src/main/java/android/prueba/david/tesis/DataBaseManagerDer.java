@@ -6,17 +6,15 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 /**
- * Created by david on 11/10/2017.
+ * Created by david on 22/10/2017.
  */
 
-public class DataBaseManager {
-    public static final String TABLE_NAME = "universidad";
-
+public class DataBaseManagerDer {
+    public static  final String TABLE_NAME = "derecho";
 
     public static final String CN_ID = "_id";
     public static final String CN_NAME = "arancel";
     public static final String CN_MONTO = "monto";
-
 
 
     public static final String CREATE_TABLE = "create table " +TABLE_NAME+ " ("
@@ -24,11 +22,10 @@ public class DataBaseManager {
             + CN_NAME + " text not null,"
             + CN_MONTO + " text not null);";
 
-
     private DbHelper helper;
     private SQLiteDatabase db;
 
-    public DataBaseManager(Context context) {
+    public DataBaseManagerDer(Context context) {
 
         helper = new DbHelper(context);
         db = helper.getWritableDatabase();
@@ -50,7 +47,7 @@ public class DataBaseManager {
     }
 
     public void  eliminar (String monto) {
-          db.delete(TABLE_NAME,CN_NAME+"=?",new String[]{monto});
+        db.delete(TABLE_NAME,CN_NAME+"=?",new String[]{monto});
     }
 
     public void modificarArancel(String arancel, String nuevoMonto) {

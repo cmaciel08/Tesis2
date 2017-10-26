@@ -47,7 +47,7 @@ public class UniActivity extends AppCompatActivity {
 
        //manager.insertar("Matricula Ingenieria Comercial", "250000 ");
         //manager.insertar ("Matricula Contaduria Publica", "250000 ");
-        manager.insertar("Matricula Lic. Administracion", "250.000");
+        //manager.insertar("Matricula Lic. Administracion", "250.000");
         manager.insertar("Cuota Lic. Administracion", "60.000");
         manager.insertar("Cuota Lic. Ingenieria COmercial", "60.000");
         manager.insertar("Cuota Contaduria Publica", "60.000");
@@ -57,7 +57,7 @@ public class UniActivity extends AppCompatActivity {
         manager.insertar("Derecho Examen S. Oportunidad", "40.000");
         manager.insertar("Conval. por Materia p/ Univ. Privada", "100.000");
         manager.insertar("Conval. por Materia p/ Univ. Publica", "50.000");
-        //manager.eliminar("Matricula Lic. Administracion");
+        manager.eliminar("Matricula Lic. Administracion");
 
 
         String [] from = new String[] {manager.CN_NAME,manager.CN_MONTO};

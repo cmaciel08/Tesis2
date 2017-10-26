@@ -68,7 +68,8 @@
         <activity
             android:name=".MapsUniActivity"
             android:label="@string/title_activity_maps_uni" />
-        <activity android:name=".Uni2Activity"></activity>
+        <activity android:name=".Uni2Activity" />
+        <activity android:name=".DerechoActivity"></activity>
     </application>
 
 </manifest>
