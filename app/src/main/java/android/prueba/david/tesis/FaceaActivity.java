@@ -2,7 +2,6 @@ package android.prueba.david.tesis;
 
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.SearchView;
@@ -10,17 +9,11 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
-import android.widget.SimpleCursorTreeAdapter;
-import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class UniActivity extends AppCompatActivity {
+public class FaceaActivity extends AppCompatActivity {
 
     //private ListView listView;
     private ImageButton imgButton;
@@ -35,7 +28,10 @@ public class UniActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_uni);
+        setContentView(R.layout.activity_facea);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.ic_desktop);
 
 
         manager = new DataBaseManager(this);
@@ -45,9 +41,9 @@ public class UniActivity extends AppCompatActivity {
 
         bt.setOnClickListener(this);*/
 
-       //manager.insertar("Matricula Ingenieria Comercial", "250000 ");
-        //manager.insertar ("Matricula Contaduria Publica", "250000 ");
-        //manager.insertar("Matricula Lic. Administracion", "250.000");
+        /*manager.insertar("Matricula Ingenieria Comercial", "250000 ");
+        manager.insertar ("Matricula Contaduria Publica", "250000 ");
+        manager.insertar("Matricula Lic. Administracion", "250.000");
         manager.insertar("Cuota Lic. Administracion", "60.000");
         manager.insertar("Cuota Lic. Ingenieria COmercial", "60.000");
         manager.insertar("Cuota Contaduria Publica", "60.000");
@@ -56,8 +52,8 @@ public class UniActivity extends AppCompatActivity {
         manager.insertar("Derecho Examen T. Oportunidad", "45.000");
         manager.insertar("Derecho Examen S. Oportunidad", "40.000");
         manager.insertar("Conval. por Materia p/ Univ. Privada", "100.000");
-        manager.insertar("Conval. por Materia p/ Univ. Publica", "50.000");
-        manager.eliminar("Matricula Lic. Administracion");
+        manager.insertar("Conval. por Materia p/ Univ. Publica", "50.000");*/
+        //manager.eliminar("Matricula Lic. Administracion");
 
 
         String [] from = new String[] {manager.CN_NAME,manager.CN_MONTO};
@@ -65,7 +61,7 @@ public class UniActivity extends AppCompatActivity {
 
         //simple_list_item_2
         cursor = manager.cargarCursorArancel();
-        adapter = new SimpleCursorAdapter (UniActivity.this,android.R.layout.simple_list_item_2, cursor, from,to,0);
+        adapter = new SimpleCursorAdapter (FaceaActivity.this,android.R.layout.simple_list_item_2, cursor, from,to,0);
         lista.setAdapter(adapter);
 
 
@@ -103,7 +99,7 @@ public class UniActivity extends AppCompatActivity {
 
         // Adaptador de la forma visual en que mostraremos nuestro datos
         adapter = new ArrayAdapter<>(
-                UniActivity.this,
+                FaceaActivity.this,
                 android.R.layout.simple_list_item_1,
                 names);
         lv.setAdapter(adapter);

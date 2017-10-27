@@ -3,12 +3,8 @@ package android.prueba.david.tesis;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.SearchView;
 
 public class Uni2Activity extends AppCompatActivity {
 
@@ -25,13 +21,15 @@ public class Uni2Activity extends AppCompatActivity {
        Button btn5 = (Button) findViewById(R.id.buttonHuma);
        Button btn6 = (Button) findViewById(R.id.buttonDer);
        Button btn8 = (Button) findViewById(R.id.buttonTecno);
+       Button btn1 = (Button) findViewById(R.id.buttonRec);
+       Button btn7 = (Button) findViewById(R.id.buttonAgro);
 
 
 
         btn4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(),UniActivity.class);
+                Intent intent = new Intent(view.getContext(),FaceaActivity.class);
                 startActivity(intent);
             }
         });
@@ -43,6 +41,54 @@ public class Uni2Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(),RectoradoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), IngenieriaActivity.class);
+                startActivity(intent);
+            }
+        });
+         btn3.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View view) {
+                 Intent intent = new Intent(view.getContext(), MedicinaActivity.class);
+                 startActivity(intent);
+             }
+         });
+
+        btn5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), HumanidadesActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), AgronomiaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), TecnologiaActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

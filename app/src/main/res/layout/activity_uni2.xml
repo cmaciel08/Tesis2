@@ -6,104 +6,12 @@
     android:layout_height="match_parent"
     tools:context="android.prueba.david.tesis.Uni2Activity">
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="308dp"
-        android:visibility="visible"
-        tools:ignore="UselessLeaf"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="31dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="31dp"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="56dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginLeft="31dp"
-        android:layout_marginRight="31dp"
-        android:id="@+id/relativeLayout">
-
-        <Button
-            android:id="@+id/buttonInge"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/buttonHuma"
-            android:textColor="@color/colorIcons"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:background="@color/colorInge"
-            android:text="Ingenieria"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/buttonMed"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorIcons"
-            android:layout_above="@+id/buttonTecno"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="47dp"
-            android:background="@color/colorMedi"
-            android:text="Medicina"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/buttonFacea"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorIcons"
-            android:layout_above="@+id/buttonTecno"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:background="@color/colorFacea"
-            android:text="Ciencias Economicas"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/buttonHuma"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorIcons"
-            android:layout_above="@+id/buttonMed"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:background="@color/colorHuma"
-            android:text="Humanidades"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/buttonDer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorIcons"
-            android:layout_above="@+id/buttonInge"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:background="@color/colorDerecho"
-            android:text="Derecho"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/buttonTecno"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorIcons"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="11dp"
-            android:background="@color/colorTecno"
-            android:text="Ciencias y Tecnologias"
-            tools:ignore="HardcodedText" />
-
-
-    </RelativeLayout>
-
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="126dp"
-        android:layout_height="0dp"
+        android:layout_width="131dp"
+        android:layout_height="77dp"
         app:srcCompat="@drawable/ic_folder"
+        android:background="@null"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintBottom_creator="1"
         android:layout_marginStart="31dp"
@@ -113,7 +21,7 @@
         android:layout_marginBottom="20dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="31dp"
+        android:layout_marginLeft="39dp"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="ContentDescription" />
 
@@ -127,15 +35,16 @@
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         android:layout_marginEnd="22dp"
         app:layout_constraintRight_toRightOf="@+id/imageButton"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="11dp"
         android:layout_marginRight="22dp"
         tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="126dp"
-        android:layout_height="0dp"
+        android:layout_width="122dp"
+        android:layout_height="80dp"
         app:srcCompat="@drawable/ic_phone_book"
+        android:background="@null"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
@@ -143,7 +52,7 @@
         android:layout_marginEnd="44dp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageButton"
-        android:layout_marginRight="31dp"
+        android:layout_marginRight="38dp"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -155,10 +64,133 @@
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         android:layout_marginStart="32dp"
         tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="5dp"
         app:layout_constraintLeft_toLeftOf="@+id/imageButton3"
-        android:layout_marginLeft="32dp"
+        android:layout_marginLeft="30dp"
         tools:ignore="HardcodedText" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="316dp"
+        android:layout_height="396dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginStart="31dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="UselessLeaf"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_editor_absoluteY="115dp">
+
+        <Button
+            android:id="@+id/buttonInge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonHuma"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorInge"
+            android:text="Ingenieria"
+            android:textColor="@color/colorIcons"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonMed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonFacea"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorMedi"
+            android:text="Medicina"
+            android:textColor="@color/colorIcons"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonFacea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonTecno"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorFacea"
+            android:text="Ciencias Economicas"
+            android:textColor="@color/colorIcons"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonHuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonMed"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorHuma"
+            android:text="Humanidades"
+            android:textColor="@color/colorIcons"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonDer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonInge"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorDerecho"
+            android:text="Derecho"
+            android:textColor="@color/colorIcons"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonTecno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="11dp"
+            android:background="@color/colorTecno"
+            android:text="Ciencias y Tecnologias"
+            android:textColor="@color/colorIcons"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/buttonAgro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonDer"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/colorRec"
+            android:text="Agronomia" />
+
+        <Button
+            android:id="@+id/buttonRec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorAgro"
+            android:text="Rectorado" />
+
+
+    </RelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>

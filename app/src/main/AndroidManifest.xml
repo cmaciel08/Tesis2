@@ -13,7 +13,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_logo"
+        android:icon="@drawable/ic_desktop"
         android:label="ConsultasPy"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -29,7 +29,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UniActivity"
+            android:name=".FaceaActivity"
             android:parentActivityName=".Uni2Activity" />
 
         <meta-data
@@ -69,7 +69,51 @@
             android:name=".MapsUniActivity"
             android:label="@string/title_activity_maps_uni" />
         <activity android:name=".Uni2Activity" />
-        <activity android:name=".DerechoActivity"></activity>
+
+        <activity android:name=".DerechoActivity"
+            android:parentActivityName=".Uni2Activity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+
+
+        <activity android:name=".RectoradoActivity"
+            android:parentActivityName=".Uni2Activity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+
+
+        <activity android:name=".IngenieriaActivity"
+            android:parentActivityName=".Uni2Activity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+
+        <activity android:name=".MedicinaActivity"
+            android:parentActivityName=".Uni2Activity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+
+        <activity android:name=".HumanidadesActivity"
+            android:parentActivityName=".Uni2Activity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+
+        <activity android:name=".TecnologiaActivity"
+            android:parentActivityName=".Uni2Activity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+
+        <activity android:name=".AgronomiaActivity"
+            android:parentActivityName=".Uni2Activity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity"/>
+
     </application>
 
 </manifest>

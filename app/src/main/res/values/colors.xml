@@ -15,4 +15,6 @@
     <color name="colorHuma">#673AB7</color>
     <color name="colorTecno">#8C9EFF</color>
     <color name="colorMedi">#C0CA33</color>
+    <color name="colorRec">#b39ddb</color>
+    <color name="colorAgro">#ffd54f</color>
 </resources>
