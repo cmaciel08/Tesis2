@@ -99,7 +99,7 @@
             android:layout_alignParentStart="true"
             android:background="@color/colorInge"
             android:text="Ingenieria"
-            android:textColor="@color/colorIcons"
+            android:textColor="@color/colorPrimaryText"
             tools:ignore="HardcodedText" />
 
         <Button
@@ -113,7 +113,7 @@
             android:layout_alignParentStart="true"
             android:background="@color/colorMedi"
             android:text="Medicina"
-            android:textColor="@color/colorIcons"
+            android:textColor="@color/colorPrimaryText"
             tools:ignore="HardcodedText" />
 
         <Button
@@ -125,7 +125,7 @@
             android:layout_alignParentStart="true"
             android:background="@color/colorFacea"
             android:text="Ciencias Economicas"
-            android:textColor="@color/colorIcons"
+            android:textColor="@color/colorPrimaryText"
             tools:ignore="HardcodedText" />
 
         <Button
@@ -139,7 +139,7 @@
             android:layout_alignParentStart="true"
             android:background="@color/colorHuma"
             android:text="Humanidades"
-            android:textColor="@color/colorIcons"
+            android:textColor="@color/colorPrimaryText"
             tools:ignore="HardcodedText" />
 
         <Button
@@ -153,26 +153,27 @@
             android:layout_alignParentStart="true"
             android:background="@color/colorDerecho"
             android:text="Derecho"
-            android:textColor="@color/colorIcons"
+            android:textColor="@color/colorPrimaryText"
             tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/buttonTecno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
             android:layout_marginBottom="11dp"
             android:background="@color/colorTecno"
             android:text="Ciencias y Tecnologias"
-            android:textColor="@color/colorIcons"
-            tools:ignore="HardcodedText" />
+            android:textColor="@color/colorPrimaryText"
+            tools:ignore="HardcodedText"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:id="@+id/buttonAgro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryText"
             android:layout_above="@+id/buttonDer"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -183,11 +184,12 @@
             android:id="@+id/buttonRec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:background="@color/colorAgro"
-            android:text="Rectorado" />
+            android:textColor="@color/colorPrimaryText"
+            android:text="Rectorado"
+            android:layout_above="@+id/buttonAgro"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
 
     </RelativeLayout>
