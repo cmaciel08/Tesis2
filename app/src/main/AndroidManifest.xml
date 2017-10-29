@@ -53,6 +53,8 @@
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
+
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -69,46 +71,63 @@
             android:name=".MapsUniActivity"
             android:label="@string/title_activity_maps_uni" />
         <activity android:name=".Uni2Activity" />
+        <activity
+            android:name=".DerechoActivity"
+            android:parentActivityName=".Uni2Activity" />
 
-        <activity android:name=".DerechoActivity"
-            android:parentActivityName=".Uni2Activity"/>
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
+            android:value=".MainActivity" />
 
+        <activity
+            android:name=".RectoradoActivity"
+            android:parentActivityName=".Uni2Activity" />
 
-        <activity android:name=".RectoradoActivity"
-            android:parentActivityName=".Uni2Activity"/>
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
+            android:value=".MainActivity" />
 
+        <activity
+            android:name=".IngenieriaActivity"
+            android:parentActivityName=".Uni2Activity" />
 
-        <activity android:name=".IngenieriaActivity"
-            android:parentActivityName=".Uni2Activity"/>
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
+            android:value=".MainActivity" />
 
-        <activity android:name=".MedicinaActivity"
-            android:parentActivityName=".Uni2Activity"/>
+        <activity
+            android:name=".MedicinaActivity"
+            android:parentActivityName=".Uni2Activity" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
+            android:value=".MainActivity" />
 
-        <activity android:name=".HumanidadesActivity"
-            android:parentActivityName=".Uni2Activity"/>
+        <activity
+            android:name=".HumanidadesActivity"
+            android:parentActivityName=".Uni2Activity" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
+            android:value=".MainActivity" />
 
-        <activity android:name=".TecnologiaActivity"
-            android:parentActivityName=".Uni2Activity"/>
+        <activity
+            android:name=".TecnologiaActivity"
+            android:parentActivityName=".Uni2Activity" />
+
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity"/>
+            android:value=".MainActivity" />
 
-        <activity android:name=".AgronomiaActivity"
+        <activity
+            android:name=".AgronomiaActivity"
+            android:parentActivityName=".Uni2Activity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
+        <activity android:name=".ContactoUniActivity"
             android:parentActivityName=".Uni2Activity"/>
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"

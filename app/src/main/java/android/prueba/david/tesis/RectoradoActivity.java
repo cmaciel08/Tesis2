@@ -26,7 +26,7 @@ public class RectoradoActivity extends AppCompatActivity {
 
         // Datos a ingresar en nuestra tabla de rectorado
 
-       /* managerRec.insertar("Legalizacion de Certificado", "30.000");
+      /*  managerRec.insertar("Legalizacion de Certificado", "30.000");
         managerRec.insertar ("Registro de Titulo de Posgrado", "20.000");
         managerRec.insertar("Registro de Titulo de Grado", "15.000");
         managerRec.insertar("Expedicion de Titulo de Grado", "225.000");

@@ -40,7 +40,7 @@
         tools:ignore="HardcodedText" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imageButtonContacto"
         android:layout_width="122dp"
         android:layout_height="80dp"
         app:srcCompat="@drawable/ic_phone_book"
@@ -65,7 +65,7 @@
         android:layout_marginStart="32dp"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="5dp"
-        app:layout_constraintLeft_toLeftOf="@+id/imageButton3"
+        app:layout_constraintLeft_toLeftOf="@+id/imageButtonContacto"
         android:layout_marginLeft="30dp"
         tools:ignore="HardcodedText" />
 

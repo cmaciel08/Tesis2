@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Uni2Activity extends AppCompatActivity {
 
@@ -13,6 +14,9 @@ public class Uni2Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_uni2);
+
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.drawable.ic_desktop);
 
 
        Button btn2 = (Button) findViewById(R.id.buttonInge);
@@ -23,6 +27,15 @@ public class Uni2Activity extends AppCompatActivity {
        Button btn8 = (Button) findViewById(R.id.buttonTecno);
        Button btn1 = (Button) findViewById(R.id.buttonRec);
        Button btn7 = (Button) findViewById(R.id.buttonAgro);
+       ImageButton btn9 = (ImageButton) findViewById(R.id.imageButtonContacto);
+
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), ContactoUniActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
 
