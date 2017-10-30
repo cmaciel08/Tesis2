@@ -1,4 +1,4 @@
-package android.prueba.david.tesis;
+package android.prueba.david.tesis.BaseDatos;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,11 +6,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 /**
- * Created by david on 22/10/2017.
+ * Created by david on 28/10/2017.
  */
 
-public class DataBaseManagerDer {
-    public static  final String TABLE_NAME = "derecho";
+public class DataBaseManagerHuma {
+    public static  final String TABLE_NAME = "humanidades";
 
     public static final String CN_ID = "_id";
     public static final String CN_NAME = "arancel";
@@ -25,7 +25,7 @@ public class DataBaseManagerDer {
     private DbHelper helper;
     private SQLiteDatabase db;
 
-    public DataBaseManagerDer(Context context) {
+    public DataBaseManagerHuma(Context context) {
 
         helper = new DbHelper(context);
         db = helper.getWritableDatabase();
@@ -63,5 +63,4 @@ public class DataBaseManagerDer {
         String[] columnas = new String[] {CN_ID, CN_NAME, CN_MONTO};
         return db.query(TABLE_NAME,columnas,CN_NAME + "=?",new String[]{arancel},null,null,null);
     }
-
 }

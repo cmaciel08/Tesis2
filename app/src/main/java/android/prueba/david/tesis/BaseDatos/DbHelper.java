@@ -1,8 +1,16 @@
-package android.prueba.david.tesis;
+package android.prueba.david.tesis.BaseDatos;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.prueba.david.tesis.BaseDatos.DataBaseManager;
+import android.prueba.david.tesis.BaseDatos.DataBaseManagerAgro;
+import android.prueba.david.tesis.BaseDatos.DataBaseManagerDer;
+import android.prueba.david.tesis.BaseDatos.DataBaseManagerHuma;
+import android.prueba.david.tesis.BaseDatos.DataBaseManagerInge;
+import android.prueba.david.tesis.BaseDatos.DataBaseManagerMed;
+import android.prueba.david.tesis.BaseDatos.DataBaseManagerRec;
+import android.prueba.david.tesis.BaseDatos.DataBaseManagerTecno;
 
 /**
  * Created by david on 11/10/2017.

@@ -1,7 +1,8 @@
-package android.prueba.david.tesis;
+package android.prueba.david.tesis.UniActivity;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.prueba.david.tesis.R;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -15,8 +16,6 @@ import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import java.net.ConnectException;
 
 public class MapsUniActivity extends FragmentActivity implements OnMapReadyCallback {
 

@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -29,15 +30,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FaceaActivity"
-            android:parentActivityName=".Uni2Activity" />
+            android:name=".UniActivity.FaceaActivity"
+            android:parentActivityName=".UniActivity.Uni2Activity" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
         <activity
-            android:name=".MuniActivity"
+            android:name=".MuniActivity.MuniActivity"
             android:parentActivityName=".MainActivity" />
 
         <meta-data
@@ -45,7 +46,7 @@
             android:value=".MainActivity" />
 
         <activity
-            android:name=".PjudicialActivity"
+            android:name=".PjudicialActivity.PjudicialActivity"
             android:parentActivityName=".MainActivity" />
 
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -68,67 +69,67 @@
             android:value="AIzaSyBq6bbFiOIQ6Qx4O3--5q2XCElBPB0aLbQ" />
 
         <activity
-            android:name=".MapsUniActivity"
+            android:name=".UniActivity.MapsUniActivity"
             android:label="@string/title_activity_maps_uni" />
-        <activity android:name=".Uni2Activity" />
+        <activity android:name=".UniActivity.Uni2Activity" />
         <activity
-            android:name=".DerechoActivity"
-            android:parentActivityName=".Uni2Activity" />
+            android:name=".UniActivity.DerechoActivity"
+            android:parentActivityName=".UniActivity.Uni2Activity" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
         <activity
-            android:name=".RectoradoActivity"
-            android:parentActivityName=".Uni2Activity" />
+            android:name=".UniActivity.RectoradoActivity"
+            android:parentActivityName=".UniActivity.Uni2Activity" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
         <activity
-            android:name=".IngenieriaActivity"
-            android:parentActivityName=".Uni2Activity" />
+            android:name=".UniActivity.IngenieriaActivity"
+            android:parentActivityName=".UniActivity.Uni2Activity" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
         <activity
-            android:name=".MedicinaActivity"
-            android:parentActivityName=".Uni2Activity" />
+            android:name=".UniActivity.MedicinaActivity"
+            android:parentActivityName=".UniActivity.Uni2Activity" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
         <activity
-            android:name=".HumanidadesActivity"
-            android:parentActivityName=".Uni2Activity" />
+            android:name=".UniActivity.HumanidadesActivity"
+            android:parentActivityName=".UniActivity.Uni2Activity" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
         <activity
-            android:name=".TecnologiaActivity"
-            android:parentActivityName=".Uni2Activity" />
+            android:name=".UniActivity.TecnologiaActivity"
+            android:parentActivityName=".UniActivity.Uni2Activity" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
         <activity
-            android:name=".AgronomiaActivity"
-            android:parentActivityName=".Uni2Activity" />
+            android:name=".UniActivity.AgronomiaActivity"
+            android:parentActivityName=".UniActivity.Uni2Activity" />
 
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
-        <activity android:name=".ContactoUniActivity"
-            android:parentActivityName=".Uni2Activity"/>
+        <activity android:name=".UniActivity.ContactoUniActivity"
+            android:parentActivityName=".UniActivity.Uni2Activity"/>
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity"/>

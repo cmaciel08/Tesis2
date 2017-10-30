@@ -1,13 +1,11 @@
-package android.prueba.david.tesis;
+package android.prueba.david.tesis.UniActivity;
 
 import android.database.Cursor;
+import android.prueba.david.tesis.BaseDatos.DataBaseManagerDer;
+import android.prueba.david.tesis.R;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.widget.ListView;
-import android.widget.SearchView;
 import android.widget.SimpleCursorAdapter;
 
 public class DerechoActivity extends AppCompatActivity {

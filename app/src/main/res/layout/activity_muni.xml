@@ -5,6 +5,6 @@
     android:layout_width="match_parent"
     android:background="#E4E5DD"
     android:layout_height="match_parent"
-    tools:context="android.prueba.david.tesis.MuniActivity">
+    tools:context="android.prueba.david.tesis.MuniActivity.MuniActivity">
 
 </android.support.constraint.ConstraintLayout>

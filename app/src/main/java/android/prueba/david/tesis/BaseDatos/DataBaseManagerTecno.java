@@ -1,4 +1,4 @@
-package android.prueba.david.tesis;
+package android.prueba.david.tesis.BaseDatos;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,8 +9,9 @@ import android.database.sqlite.SQLiteDatabase;
  * Created by david on 28/10/2017.
  */
 
-public class DataBaseManagerHuma {
-    public static  final String TABLE_NAME = "humanidades";
+public class DataBaseManagerTecno {
+
+    public static  final String TABLE_NAME = "tecnologia";
 
     public static final String CN_ID = "_id";
     public static final String CN_NAME = "arancel";
@@ -25,7 +26,7 @@ public class DataBaseManagerHuma {
     private DbHelper helper;
     private SQLiteDatabase db;
 
-    public DataBaseManagerHuma(Context context) {
+    public DataBaseManagerTecno(Context context) {
 
         helper = new DbHelper(context);
         db = helper.getWritableDatabase();
@@ -63,4 +64,5 @@ public class DataBaseManagerHuma {
         String[] columnas = new String[] {CN_ID, CN_NAME, CN_MONTO};
         return db.query(TABLE_NAME,columnas,CN_NAME + "=?",new String[]{arancel},null,null,null);
     }
+
 }

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E4E5DD"
-    tools:context="android.prueba.david.tesis.FaceaActivity"
+    tools:context="android.prueba.david.tesis.UniActivity.FaceaActivity"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 

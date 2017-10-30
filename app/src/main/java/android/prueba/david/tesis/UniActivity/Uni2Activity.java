@@ -1,6 +1,16 @@
-package android.prueba.david.tesis;
+package android.prueba.david.tesis.UniActivity;
 
 import android.content.Intent;
+import android.prueba.david.tesis.R;
+import android.prueba.david.tesis.UniActivity.AgronomiaActivity;
+import android.prueba.david.tesis.UniActivity.ContactoUniActivity;
+import android.prueba.david.tesis.UniActivity.DerechoActivity;
+import android.prueba.david.tesis.UniActivity.FaceaActivity;
+import android.prueba.david.tesis.UniActivity.HumanidadesActivity;
+import android.prueba.david.tesis.UniActivity.IngenieriaActivity;
+import android.prueba.david.tesis.UniActivity.MedicinaActivity;
+import android.prueba.david.tesis.UniActivity.RectoradoActivity;
+import android.prueba.david.tesis.UniActivity.TecnologiaActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;

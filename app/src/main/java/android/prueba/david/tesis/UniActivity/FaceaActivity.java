@@ -1,7 +1,9 @@
-package android.prueba.david.tesis;
+package android.prueba.david.tesis.UniActivity;
 
 import android.content.Intent;
 import android.database.Cursor;
+import android.prueba.david.tesis.BaseDatos.DataBaseManager;
+import android.prueba.david.tesis.R;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.SearchView;

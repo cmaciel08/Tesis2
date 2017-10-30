@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="android.prueba.david.tesis.Uni2Activity">
+    tools:context="android.prueba.david.tesis.UniActivity.Uni2Activity">
 
     <ImageButton
         android:id="@+id/imageButton"
