@@ -29,11 +29,11 @@ public class HumanidadesActivity extends AppCompatActivity {
 
         // Datos a ingresar en nuestra tabla de humanidades
 
-        /*managerHuma.insertar("Legalizacion de Certificado", "30.000");
+        managerHuma.insertar("Legalizacion de Certificado", "30.000");
         managerHuma.insertar("Registro de Titulo de Posgrado", "20.000");
         managerHuma.insertar("Registro de Titulo de Grado", "15.000");
         managerHuma.insertar("Expedicion de Titulo de Grado", "225.000");
-        managerHuma.insertar("Expedicion de Titulo de Posgrado", "300.000");*/
+        managerHuma.insertar("Expedicion de Titulo de Posgrado", "300.000");
         //managerHuma.eliminar("Matricula Lic. Administracion");
 
 

@@ -13,5 +13,8 @@ public class PjudicialActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_logo);
+
+
+
     }
 }

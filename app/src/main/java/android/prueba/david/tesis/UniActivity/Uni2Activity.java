@@ -48,6 +48,16 @@ public class Uni2Activity extends AppCompatActivity {
         });
 
 
+        ImageButton btn10 = (ImageButton) findViewById(R.id.imageButtonInfo);
+
+        btn10.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), InfoUniActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btn4.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -114,6 +124,7 @@ public class Uni2Activity extends AppCompatActivity {
 
 
     }
+
 
 }
 

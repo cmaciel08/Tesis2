@@ -27,14 +27,22 @@ public class MedicinaActivity extends AppCompatActivity {
         lista= (ListView) findViewById(R.id.listViewMedicina);
 
 
-        /*managerMed.insertar("Matricula Derecho", "300.000");
+       managerMed.insertar("Matricula Derecho", "300.000");
         managerMed.insertar ("Matricula Escribania", "300.000");
         managerMed.insertar("Cuota Derecho", "100.000");
         managerMed.insertar("Cuota Escribania", "100.000");
+        managerMed.insertar("Derecho Examen S. Oportunidad", "40.000");
         managerMed.insertar("Derecho Examen P. Oportunidad", "35.000");
         managerMed.insertar("Derecho Examen S. Oportunidad", "40.000");
         managerMed.insertar("Derecho Examen T. Oportunidad", "45.000");
-        managerMed.insertar("Derecho Examen S. Oportunidad", "40.000");*/
+        managerMed.insertar("Matricula Derecho", "300.000");
+        managerMed.insertar ("Matricula Escribania", "300.000");
+        managerMed.insertar("Cuota Derecho", "100.000");
+        managerMed.insertar("Cuota Escribania", "100.000");
+        managerMed.insertar("Derecho Examen S. Oportunidad", "40.000");
+        managerMed.insertar("Derecho Examen P. Oportunidad", "35.000");
+        managerMed.insertar("Derecho Examen S. Oportunidad", "40.000");
+        managerMed.insertar("Derecho Examen T. Oportunidad", "45.000");
         //managerMed.eliminar("Matricula Lic. Administracion");
 
 

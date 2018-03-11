@@ -28,11 +28,11 @@ public class IngenieriaActivity extends AppCompatActivity {
 
         // Datos a ingresar en nuestra tabla de ingenieria
 
-        /*managerInge.insertar("Legalizacion de Certificado", "30.000");
+       managerInge.insertar("Legalizacion de Certificado", "30.000");
         managerInge.insertar ("Registro de Titulo de Posgrado", "20.000");
         managerInge.insertar("Registro de Titulo de Grado", "15.000");
         managerInge.insertar("Expedicion de Titulo de Grado", "225.000");
-        managerInge.insertar("Expedicion de Titulo de Posgrado", "300.000");*/
+        managerInge.insertar("Expedicion de Titulo de Posgrado", "300.000");
         //managerInge.eliminar("Matricula Lic. Administracion");
 
 

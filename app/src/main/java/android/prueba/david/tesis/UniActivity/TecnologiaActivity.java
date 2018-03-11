@@ -27,15 +27,23 @@ public class TecnologiaActivity extends AppCompatActivity {
         managerTecno = new DataBaseManagerTecno(this);
         lista= (ListView) findViewById(R.id.listViewTecnologia);
 
-        // Insertar datos en la Tabla de tecnologia
-        /*managerTecno.insertar("Matricula de Ing. en Alimentos", "300.000");
+        //Insertar datos en la Tabla de tecnologia
+       managerTecno.insertar("Matricula de Ing. en Alimentos", "300.000");
         managerTecno.insertar ("Matricula de Lic. en Informatica Empresarial", "300.000");
         managerTecno.insertar("Cuota Ing. en Alimentos", "100.000");
         managerTecno.insertar("Cuota Informatica Empresarial", "100.000");
+        managerTecno.insertar("Derecho Examen S. Oportunidad", "40.000");
         managerTecno.insertar("Derecho Examen P. Oportunidad", "35.000");
         managerTecno.insertar("Derecho Examen S. Oportunidad", "40.000");
         managerTecno.insertar("Derecho Examen T. Oportunidad", "45.000");
-        managerTecno.insertar("Derecho Examen S. Oportunidad", "40.000");*/
+        managerTecno.insertar("Matricula de Ing. en Alimentos", "300.000");
+        managerTecno.insertar ("Matricula de Lic. en Informatica Empresarial", "300.000");
+        managerTecno.insertar("Cuota Ing. en Alimentos", "100.000");
+        managerTecno.insertar("Cuota Informatica Empresarial", "100.000");
+        managerTecno.insertar("Derecho Examen S. Oportunidad", "40.000");
+        managerTecno.insertar("Derecho Examen P. Oportunidad", "35.000");
+        managerTecno.insertar("Derecho Examen S. Oportunidad", "40.000");
+        managerTecno.insertar("Derecho Examen T. Oportunidad", "45.000");
         //managerTecno.eliminar("Matricula Lic. Administracion");
 
 
