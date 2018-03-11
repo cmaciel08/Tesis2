@@ -12,6 +12,6 @@ public class MuniActivity extends AppCompatActivity {
         setContentView(R.layout.activity_muni);
 
         getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_logo);
+        getSupportActionBar().setIcon(R.drawable.ic_desktop);
     }
 }

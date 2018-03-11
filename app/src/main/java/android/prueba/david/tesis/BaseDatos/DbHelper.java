@@ -17,8 +17,8 @@ import android.prueba.david.tesis.BaseDatos.DataBaseManagerTecno;
  */
 
 public class DbHelper extends SQLiteOpenHelper {
-    private static final String DB_NAME = "universidad_III.sqlite";
-    private static final int DB_SCHEME_VERSION = 3;
+    private static final String DB_NAME = "universidad_IV.sqlite";
+    private static final int DB_SCHEME_VERSION = 4;
 
     public DbHelper(Context context) {
         super(context, DB_NAME, null, DB_SCHEME_VERSION);
@@ -35,6 +35,7 @@ public class DbHelper extends SQLiteOpenHelper {
         db.execSQL(DataBaseManagerHuma.CREATE_TABLE);
         db.execSQL(DataBaseManagerMed.CREATE_TABLE);
         db.execSQL(DataBaseManagerTecno.CREATE_TABLE);
+        db.execSQL(DataBaseManagerPjudicial.CREATE_TABLE);
 
 
         //db.execSQL("create table derecho(_id integer primary key autoincrement,arancel text,monto text)");
