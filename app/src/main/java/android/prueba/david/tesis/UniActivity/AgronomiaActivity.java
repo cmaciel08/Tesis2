@@ -27,11 +27,11 @@ public class AgronomiaActivity extends AppCompatActivity {
         lista= (ListView) findViewById(R.id.listViewAgronomia);
 
         // Datos a ingresar en nuestra tabla de agropecuaria
-       /* managerAgro.insertar("Legalizacion de Certificado", "30.000");
+        managerAgro.insertar("Legalizacion de Certificado", "30.000");
         managerAgro.insertar ("Registro de Titulo de Posgrado", "20.000");
         managerAgro.insertar("Registro de Titulo de Grado", "15.000");
         managerAgro.insertar("Expedicion de Titulo de Grado", "225.000");
-        managerAgro.insertar("Expedicion de Titulo de Posgrado", "300.000");*/
+        managerAgro.insertar("Expedicion de Titulo de Posgrado", "300.000");
         //managerRec.eliminar("Matricula Lic. Administracion");
 
 

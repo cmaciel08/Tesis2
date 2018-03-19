@@ -2,4 +2,6 @@
 <resources>
     <item name="enter" type="id" />
     <item name="bt" type="id" />
+    <item name="Buscar" type="id" />
+    <item name="lista" type="id" />
 </resources>

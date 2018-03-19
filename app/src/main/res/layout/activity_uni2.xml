@@ -8,64 +8,27 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
-    <ImageButton
-        android:id="@+id/imageButtonInfo"
-        android:layout_height="68dp"
-        android:layout_marginStart="98dp"
-        android:background="@null"
-        app:srcCompat="@drawable/ic_folder"
-        tools:ignore="ContentDescription"
-        android:layout_width="wrap_content"
-        app:layout_constraintRight_toLeftOf="@+id/imageButtonContacto"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginEnd="98dp"
-        android:layout_marginTop="30dp"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="98dp"
-        android:layout_marginRight="98dp"
-        app:layout_constraintHorizontal_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/imageButtonContacto"
-        android:layout_height="55dp"
-        android:layout_marginEnd="23dp"
-        android:background="@null"
-        app:srcCompat="@drawable/ic_phone_book"
-        tools:ignore="ContentDescription"
-        android:layout_width="0dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
-        app:layout_constraintRight_toRightOf="@+id/relativeLayout"
-        app:layout_constraintTop_toTopOf="@+id/imageButtonInfo"
-        android:layout_marginRight="23dp" />
-
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginEnd="21dp"
-        android:layout_marginStart="21dp"
+        android:layout_weight="1"
         android:visibility="visible"
-        tools:ignore="UselessLeaf"
+        tools:ignore="NotSibling,UselessLeaf"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="21dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="21dp"
         app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="5dp"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonInfo"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:layout_constraintLeft_creator="1"
         android:layout_marginBottom="12dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="21dp"
-        android:layout_marginRight="21dp"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="1.0">
+        android:layout_marginRight="21dp">
 
         <Button
             android:id="@+id/buttonInge"
@@ -184,17 +147,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/buttonInge"
-            android:layout_alignParentEnd="false"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
             android:layout_alignParentStart="true"
-            android:layout_margin="0dp"
-            android:layout_marginBottom="0dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginLeft="0dp"
-            android:layout_marginRight="0dp"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
             android:background="@color/colorDerecho"
             android:padding="15dp"
             android:paddingBottom="15dp"
@@ -263,6 +217,60 @@
 
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="47dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintRight_toRightOf="@+id/relativeLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <ImageButton
+            android:id="@+id/imageButtonContacto"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_weight="1"
+            android:background="@null"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintRight_toRightOf="@+id/relativeLayout"
+            app:layout_constraintTop_toTopOf="@+id/imageButtonInfo"
+            app:srcCompat="@drawable/ic_phone_book"
+            tools:ignore="ContentDescription"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+
+        <ImageButton
+            android:id="@+id/imageButtonInfo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@null"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/imageButtonContacto"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_folder"
+            tools:ignore="ContentDescription"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

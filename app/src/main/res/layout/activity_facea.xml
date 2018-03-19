@@ -30,7 +30,7 @@
         android:layout_height="0dp"
         android:contentDescription=""
         android:onClick="verMapa"
-        app:srcCompat="@drawable/ic_map"
+        app:srcCompat="@drawable/ic_map2"
         tools:ignore="ContentDescription,VectorDrawableCompat"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"

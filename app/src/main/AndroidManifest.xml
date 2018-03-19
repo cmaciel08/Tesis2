@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="android.prueba.david.tesis">
 
     <!--
@@ -12,7 +13,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
-    <supports-screens/>
+
+    <supports-screens />
 
     <application
         android:allowBackup="true"
@@ -31,8 +33,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".MuniActivity.MuniActivity"
             android:parentActivityName=".MainActivity" />
@@ -49,14 +49,13 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
-
-
         <activity
             android:name=".PjudicialActivity.PjudicialActivity"
             android:parentActivityName=".MainActivity" />
 
-        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
         <meta-data
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
@@ -73,7 +72,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBq6bbFiOIQ6Qx4O3--5q2XCElBPB0aLbQ" />
 
-
         <activity
             android:name=".UniActivity.FaceaActivity"
             android:parentActivityName=".UniActivity.Uni2Activity" />
@@ -84,7 +82,13 @@
 
         <activity
             android:name=".UniActivity.MapsUniActivity"
-            android:label="@string/title_activity_maps_uni" />
+            android:label="@string/title_activity_maps_uni"
+            android:parentActivityName=".UniActivity.Uni2Activity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
         <activity
             android:name=".UniActivity.DerechoActivity"
             android:parentActivityName=".UniActivity.Uni2Activity" />
@@ -149,7 +153,6 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
-
         <activity
             android:name=".UniActivity.InfoUniActivity"
             android:parentActivityName=".UniActivity.Uni2Activity" />
@@ -158,6 +161,24 @@
             android:name="android.support.PARENT_ACTIVITY"
             android:value=".MainActivity" />
 
+        <activity
+            android:name=".PjudicialActivity.Pjudicial2Activity"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
+        <activity android:name=".PjudicialActivity.MapsPjuActivity" />
+        <activity
+            android:name=".PjudicialActivity.Pjudicial3Activity"
+            android:parentActivityName=".MainActivity" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".MainActivity" />
+
+        <activity android:name=".MuniActivity.MapsMuniActivity"></activity>
     </application>
 
 </manifest>

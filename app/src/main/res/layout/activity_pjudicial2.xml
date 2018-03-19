@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#E4E5DD"
     android:layout_height="match_parent"
-    tools:context="android.prueba.david.tesis.MuniActivity.MuniActivity">
+    tools:context="android.prueba.david.tesis.PjudicialActivity.Pjudicial2Activity">
+
 
     <ImageButton
-        android:id="@+id/imageButtonMaps3"
+        android:id="@+id/imageButtonMaps2"
         android:layout_width="52dp"
         android:layout_height="0dp"
         android:contentDescription=""
@@ -19,29 +19,33 @@
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginTop="6dp"
-        app:layout_constraintTop_toBottomOf="@+id/listViewMuni"
-        android:layout_marginRight="16dp" />
+        android:layout_marginEnd="10dp"
+        tools:layout_editor_absoluteX="308dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginRight="10dp" />
 
     <ListView
-        android:id="@+id/listViewMuni"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:padding="5dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="17dp"
-        app:layout_constraintRight_toRightOf="@+id/imageButtonMaps3"
-        android:layout_marginTop="65dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="65dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/listViewPjudicial2"
+        android:layout_width="340dp"
+        android:layout_height="383dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="17dp" />
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+
+    </ListView>
+
 </android.support.constraint.ConstraintLayout>

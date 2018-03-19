@@ -2,9 +2,12 @@ package android.prueba.david.tesis;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.prueba.david.tesis.PjudicialActivity.Pjudicial2Activity;
+import android.prueba.david.tesis.PjudicialActivity.Pjudicial3Activity;
 import android.prueba.david.tesis.PjudicialActivity.PjudicialActivity;
 import android.prueba.david.tesis.MuniActivity.MuniActivity;
 import android.prueba.david.tesis.UniActivity.Uni2Activity;
+import android.support.v4.view.MenuItemCompat;
 import android.view.MenuInflater;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,6 +19,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.SearchView;
+
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -38,7 +42,6 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
 
-
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
     }
@@ -59,30 +62,6 @@ public class MainActivity extends AppCompatActivity
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }*/
-
-   @Override
-   public boolean onCreateOptionsMenu(Menu menu) {
-       MenuInflater inflater = getMenuInflater();
-       inflater.inflate(R.menu.menu_search, menu);
-       MenuItem item = menu.findItem(R.id.menuSearch);
-       SearchView searchView = (SearchView) item.getActionView();
-
-       searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-           @Override
-           public boolean onQueryTextSubmit(String query) {
-               return false;
-           }
-
-           @Override
-           public boolean onQueryTextChange(String newText) {
-               adapter.getFilter().filter(newText);
-               return false;
-           }
-       });
-
-
-       return super.onCreateOptionsMenu(menu);
-   }
 
 
 
@@ -119,7 +98,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_pjudicial) {
             // Ir al activity del Poder Judicial
-            Intent c = new Intent(this, PjudicialActivity.class);
+            Intent c = new Intent(this, Pjudicial3Activity.class);
             startActivity(c);
 
         }  else if (id == R.id.nav_send) {
@@ -131,3 +110,5 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 }
+
+

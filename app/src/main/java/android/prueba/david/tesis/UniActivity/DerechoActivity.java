@@ -27,14 +27,14 @@ public class DerechoActivity extends AppCompatActivity {
         lista= (ListView) findViewById(R.id.listViewDerecho);
 
 
-        /*managerDer.insertar("Matricula Derecho", "300.000");
+        managerDer.insertar("Matricula Derecho", "300.000");
         managerDer.insertar ("Matricula Escribania", "300.000");
         managerDer.insertar("Cuota Derecho", "100.000");
         managerDer.insertar("Cuota Escribania", "100.000");
         managerDer.insertar("Derecho Examen P. Oportunidad", "35.000");
-         managerDer.insertar("Derecho Examen S. Oportunidad", "40.000");
-          managerDer.insertar("Derecho Examen T. Oportunidad", "45.000");
-        managerDer.insertar("Derecho Examen S. Oportunidad", "40.000");*/
+        managerDer.insertar("Derecho Examen S. Oportunidad", "40.000");
+        managerDer.insertar("Derecho Examen T. Oportunidad", "45.000");
+        managerDer.insertar("Derecho Examen S. Oportunidad", "40.000");
         //managerDer.eliminar("Matricula Lic. Administracion");
 
 

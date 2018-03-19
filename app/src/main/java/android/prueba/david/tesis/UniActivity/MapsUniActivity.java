@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.prueba.david.tesis.R;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
-
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.android.gms.maps.CameraUpdateFactory;
@@ -21,21 +20,24 @@ public class MapsUniActivity extends FragmentActivity implements OnMapReadyCallb
 
     private GoogleMap mMap;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps_uni);
+
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
 
         int status = GooglePlayServicesUtil.isGooglePlayServicesAvailable(getApplicationContext());
 
-        if(status== ConnectionResult.SUCCESS){
+        if (status == ConnectionResult.SUCCESS) {
 
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
-    } else {
-            Dialog dialog = GooglePlayServicesUtil.getErrorDialog(status,(Activity)getApplicationContext(),10);
+            SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+                    .findFragmentById(R.id.map);
+            mapFragment.getMapAsync(this);
+        } else {
+            Dialog dialog = GooglePlayServicesUtil.getErrorDialog(status, (Activity) getApplicationContext(), 10);
             dialog.show();
         }
 
@@ -67,4 +69,5 @@ public class MapsUniActivity extends FragmentActivity implements OnMapReadyCallb
 
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, zoomlevel));
     }
+
 }
