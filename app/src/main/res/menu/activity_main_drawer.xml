@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <group android:checkableBehavior="single">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
         <item
             android:id="@+id/nav_uni"
             android:icon="@drawable/ic_uni"
-            android:title="Universidad Nacional de Itapua" />
+            android:title="Universidad Nacional de Itapua"
+            android:textSize="10dp"
+            android:visible="true" />
         <item
             android:id="@+id/nav_muni"
             android:icon="@drawable/ic_municipalidad"
-            android:title="Muninicipalidad de Encarnacion" />
+            android:title="Muninicipalidad de Encarnacion"
+            android:textSize="10dp"
+            />
         <item
             android:id="@+id/nav_pjudicial"
             android:icon="@drawable/ic_judicial"
-            android:title="Poder Judicial" />
+            android:title="Poder Judicial"
+            android:textSize="10dp"/>
 
     </group>
 

@@ -19,6 +19,8 @@ import android.widget.ImageButton;
 
 public class Uni2Activity extends AppCompatActivity {
 
+    private ImageButton imgButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,16 @@ public class Uni2Activity extends AppCompatActivity {
        Button btn1 = (Button) findViewById(R.id.buttonRec);
        Button btn7 = (Button) findViewById(R.id.buttonAgro);
        ImageButton btn9 = (ImageButton) findViewById(R.id.imageButtonContacto);
+
+
+        imgButton = (ImageButton) findViewById(R.id.imageButtonMaps);
+        imgButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplication(), MapsUniActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btn9.setOnClickListener(new View.OnClickListener() {
             @Override

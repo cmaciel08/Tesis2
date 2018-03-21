@@ -43,7 +43,7 @@ public class FaceaActivity extends AppCompatActivity {
 
         bt.setOnClickListener(this);*/
 
-       /* manager.insertar("Matricula Ingenieria Comercial", "250000 ");
+       /*manager.insertar("Matricula Ingenieria Comercial", "250000 ");
         manager.insertar ("Matricula Contaduria Publica", "250000 ");
         manager.insertar("Matricula Lic. Administracion", "250.000");
         manager.insertar("Cuota Lic. Administracion", "60.000");
@@ -63,19 +63,19 @@ public class FaceaActivity extends AppCompatActivity {
 
         //simple_list_item_2
         cursor = manager.cargarCursorArancel();
-        adapter = new SimpleCursorAdapter (FaceaActivity.this,android.R.layout.simple_list_item_2, cursor, from,to,0);
+        adapter = new SimpleCursorAdapter (FaceaActivity.this,android.R.layout.simple_expandable_list_item_2, cursor, from,to,0);
         lista.setAdapter(adapter);
 
 
 
-        imgButton = (ImageButton) findViewById(R.id.imageButtonMaps);
+       /* imgButton = (ImageButton) findViewById(R.id.imageButtonMaps);
         imgButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                  Intent intent = new Intent(getApplication(), MapsUniActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
 
        /* ListView lv = (ListView) findViewById(R.id.listViewCosto);

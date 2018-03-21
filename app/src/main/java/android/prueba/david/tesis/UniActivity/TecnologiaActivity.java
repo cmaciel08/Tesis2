@@ -28,7 +28,7 @@ public class TecnologiaActivity extends AppCompatActivity {
         lista= (ListView) findViewById(R.id.listViewTecnologia);
 
         //Insertar datos en la Tabla de tecnologia
-        managerTecno.insertar("Matricula de Ing. en Alimentos", "300.000");
+/*        managerTecno.insertar("Matricula de Ing. en Alimentos", "300.000");
         managerTecno.insertar ("Matricula de Lic. en Informatica Empresarial", "300.000");
         managerTecno.insertar("Cuota Ing. en Alimentos", "100.000");
         managerTecno.insertar("Cuota Informatica Empresarial", "100.000");
@@ -43,7 +43,7 @@ public class TecnologiaActivity extends AppCompatActivity {
         managerTecno.insertar("Derecho Examen S. Oportunidad", "40.000");
         managerTecno.insertar("Derecho Examen P. Oportunidad", "35.000");
         managerTecno.insertar("Derecho Examen S. Oportunidad", "40.000");
-        managerTecno.insertar("Derecho Examen T. Oportunidad", "45.000");
+        managerTecno.insertar("Derecho Examen T. Oportunidad", "45.000");*/
         //managerTecno.eliminar("Matricula Lic. Administracion");
 
 
@@ -54,7 +54,7 @@ public class TecnologiaActivity extends AppCompatActivity {
 
         //simple_list_item_2
         cursor = managerTecno.cargarCursorArancel();
-        adapter = new SimpleCursorAdapter(TecnologiaActivity.this,android.R.layout.simple_list_item_2, cursor, from,to,0);
+        adapter = new SimpleCursorAdapter(TecnologiaActivity.this,android.R.layout.simple_expandable_list_item_2, cursor, from,to,0);
         lista.setAdapter(adapter);
     }
 }

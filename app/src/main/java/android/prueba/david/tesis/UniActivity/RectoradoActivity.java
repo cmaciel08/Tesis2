@@ -28,11 +28,11 @@ public class RectoradoActivity extends AppCompatActivity {
 
         // Datos a ingresar en nuestra tabla de rectorado
 
-        managerRec.insertar("Legalizacion de Certificado", "30.000");
+       /* managerRec.insertar("Legalizacion de Certificado", "30.000");
         managerRec.insertar ("Registro de Titulo de Posgrado", "20.000");
         managerRec.insertar("Registro de Titulo de Grado", "15.000");
         managerRec.insertar("Expedicion de Titulo de Grado", "225.000");
-        managerRec.insertar("Expedicion de Titulo de Posgrado", "300.000");
+        managerRec.insertar("Expedicion de Titulo de Posgrado", "300.000");*/
         //managerRec.eliminar("Matricula Lic. Administracion");
 
 
@@ -43,7 +43,7 @@ public class RectoradoActivity extends AppCompatActivity {
 
         //simple_list_item_2
         cursor = managerRec.cargarCursorArancel();
-        adapter = new SimpleCursorAdapter(RectoradoActivity.this,android.R.layout.simple_list_item_2, cursor, from,to,0);
+        adapter = new SimpleCursorAdapter(RectoradoActivity.this,android.R.layout.simple_expandable_list_item_2, cursor, from,to,0);
         lista.setAdapter(adapter);
     }
 }

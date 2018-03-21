@@ -42,7 +42,7 @@ public class AgronomiaActivity extends AppCompatActivity {
 
         //simple_list_item_2
         cursor = managerAgro.cargarCursorArancel();
-        adapter = new SimpleCursorAdapter(AgronomiaActivity.this,android.R.layout.simple_list_item_2, cursor, from,to,0);
+        adapter = new SimpleCursorAdapter(AgronomiaActivity.this,android.R.layout.simple_expandable_list_item_2, cursor, from,to,0);
         lista.setAdapter(adapter);
     }
 }

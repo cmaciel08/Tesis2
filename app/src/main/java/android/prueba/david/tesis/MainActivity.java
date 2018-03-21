@@ -6,6 +6,7 @@ import android.prueba.david.tesis.PjudicialActivity.Pjudicial2Activity;
 import android.prueba.david.tesis.PjudicialActivity.Pjudicial3Activity;
 import android.prueba.david.tesis.PjudicialActivity.PjudicialActivity;
 import android.prueba.david.tesis.MuniActivity.MuniActivity;
+import android.prueba.david.tesis.UniActivity.MapsUniActivity;
 import android.prueba.david.tesis.UniActivity.Uni2Activity;
 import android.support.v4.view.MenuItemCompat;
 import android.view.MenuInflater;
@@ -17,7 +18,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.SearchView;
 
 
@@ -26,6 +29,7 @@ public class MainActivity extends AppCompatActivity
 
 
     private ArrayAdapter<String> adapter;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,8 +46,11 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
 
+
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
     }
 
     @Override

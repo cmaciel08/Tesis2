@@ -53,7 +53,7 @@ public class MedicinaActivity extends AppCompatActivity {
 
         //simple_list_item_2
         cursor = managerMed.cargarCursorArancel();
-        adapter = new SimpleCursorAdapter(MedicinaActivity.this,android.R.layout.simple_list_item_2, cursor, from,to,0);
+        adapter = new SimpleCursorAdapter(MedicinaActivity.this,android.R.layout.simple_expandable_list_item_2, cursor, from,to,0);
         lista.setAdapter(adapter);
 
     }

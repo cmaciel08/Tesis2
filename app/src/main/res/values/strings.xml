@@ -14,15 +14,7 @@
     <string name="ver_menu">VER MENU</string>
     <string name="submitted" />
     <string name="search" />
-    <string-array name="my_foods">
-        <item>Hola</item>
-        <item>Hola</item>
-        <item>Hola</item>
-        <item>Hola</item>
-
-
-    </string-array>
-
+    <string name="textoUni">Para poder realizar el pago de los distintos aranceles primeramente  tiene que acercarse al Departamento Administrativo de la facultad al cual corresponde el arancel a abonar, una ver llegado al Dpto. Administrativo, debe de indicar al funcionario lo que desea abonar, en el momento se registrara lo datos requeridos y luego debe de pasar por alguna boca de cobranza de la red practipago, en donde indicando el numero de documento podra realizar el pago</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

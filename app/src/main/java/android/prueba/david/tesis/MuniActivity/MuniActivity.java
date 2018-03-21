@@ -3,7 +3,9 @@ package android.prueba.david.tesis.MuniActivity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.prueba.david.tesis.BaseDatos.DataBaseManagerMuni;
+import android.prueba.david.tesis.PjudicialActivity.ContactoPjActivity;
 import android.prueba.david.tesis.R;
+import android.prueba.david.tesis.UniActivity.InfoUniActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -28,12 +30,25 @@ public class MuniActivity extends AppCompatActivity {
         getSupportActionBar().setIcon(R.drawable.ic_desktop);
 
 
+
+        ImageButton btn10 = (ImageButton) findViewById(R.id.imageButtonInfo2);
+
+        btn10.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), InfoMuniActivity.class);
+                startActivity(intent);
+            }
+        });
+
         managerMuni= new DataBaseManagerMuni(this);
         lista = (ListView) findViewById(R.id.listViewMuni);
 
 
+
         // Datos a ingresar en nuestra tabla de pjudicial
-       /* managerMuni.insertar("Pantente fija anual-Surtidor de combustible liquido, nafta, Gas Oill, Fuell Oil, Kerosen, Alcohol y otros (Grifo por unidad)", "70.000");
+        /*managerMuni.insertar("Pantente fija anual-Surtidor de combustible liquido, nafta, Gas Oill, Fuell Oil, Kerosen, Alcohol y otros (Grifo por unidad)", "70.000");
         managerMuni.insertar("Pantente fija anual-Surtidor de combustible liquido, nafta, Gas Oill, Fuell Oil, Kerosen, Alcohol y otros (Servicio de lavado y engrase)", "70.000");
         managerMuni.insertar("Pantente fija anual-Surtidor de combustible liquido, nafta, Gas Oill, Fuell Oil, Kerosen, Alcohol y otros (Servicio de Gomeria)", "60.000");
         managerMuni.insertar("Patente fija anual-Escritorios de Sociedades constituidas con fines de lucro", "210.000");
@@ -61,7 +76,7 @@ public class MuniActivity extends AppCompatActivity {
 
         //simple_list_item_2
         cursor = managerMuni.cargarCursorArancel();
-        adapter = new SimpleCursorAdapter(MuniActivity.this,android.R.layout.simple_list_item_2, cursor, from,to,0);
+        adapter = new SimpleCursorAdapter(MuniActivity.this,android.R.layout.simple_expandable_list_item_2, cursor, from,to,0);
         lista.setAdapter(adapter);
 
 
@@ -70,6 +85,15 @@ public class MuniActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplication(), MapsMuniActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton btn9 = (ImageButton) findViewById(R.id.imageButtonContacto2);
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), ContactoMuniActivity.class);
                 startActivity(intent);
             }
         });
